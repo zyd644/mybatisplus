@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.stech.mybatisplus.mapper.CusUserAlarmMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.stech.mybatisplus.entity.CusUserAlarmEntity">
+        <result column="id" property="id" />
+        <result column="tenant_group" property="tenantGroup" />
+        <result column="tenant_id" property="tenantId" />
+        <result column="create_area" property="createArea" />
+        <result column="create_dept" property="createDept" />
+        <result column="create_user" property="createUser" />
+        <result column="create_time" property="createTime" />
+        <result column="update_user" property="updateUser" />
+        <result column="update_time" property="updateTime" />
+        <result column="status" property="status" />
+        <result column="is_deleted" property="isDeleted" />
+        <result column="user_no" property="userNo" />
+        <result column="alarm_code" property="alarmCode" />
+        <result column="alarm_posi" property="alarmPosi" />
+        <result column="alarm_fix_date" property="alarmFixDate" />
+        <result column="alarm_remove_date" property="alarmRemoveDate" />
+        <result column="alarm_type" property="alarmType" />
+        <result column="factory_id" property="factoryId" />
+        <result column="model_no" property="modelNo" />
+        <result column="alarm_state" property="alarmState" />
+        <result column="count" property="count" />
+        <result column="price" property="price" />
+        <result column="agent" property="agent" />
+        <result column="guarantee_year" property="guaranteeYear" />
+        <result column="make_date" property="makeDate" />
+        <result column="receive_type" property="receiveType" />
+        <result column="receive_factory" property="receiveFactory" />
+        <result column="expire_date" property="expireDate" />
+        <result column="alarm_cycle_date" property="alarmCycleDate" />
+        <result column="probe_install_position" property="probeInstallPosition" />
+        <result column="affiliation_dept" property="affiliationDept" />
+        <result column="remark" property="remark" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        tenant_group,
+        tenant_id,
+        create_area,
+        create_dept,
+        create_user,
+        create_time,
+        update_user,
+        update_time,
+        status,
+        is_deleted,
+        user_no, alarm_code, alarm_posi, alarm_fix_date, alarm_remove_date, alarm_type, factory_id, model_no, alarm_state, count, price, agent, guarantee_year, make_date, receive_type, receive_factory, expire_date, alarm_cycle_date, probe_install_position, affiliation_dept, remark
+    </sql>
+
+</mapper>
